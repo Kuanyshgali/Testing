@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "tyM90Fw2OozE5x2a6hTsE6WlegL5WELXZW24FugkDa+J/77G4aQBmQctqmjjwgu/tSSbhR0psJUBlsbC/eRHFA==",
+  "dgSpecHash": "94L4M5PpCEIC+jwMyAEW5jQQt5gC6G5KHxCuZQ1gq69ihPMDTvGj0/TQCmtLXxq8t9wa/WhfF3sDqflCP9Pxdg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\aserb\\source\\repos\\AutoTests\\AutoTests\\AutoTests.csproj",
+  "projectFilePath": "C:\\Users\\aserb\\Downloads\\AutoTests\\AutoTests\\AutoTests\\AutoTests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\aserb\\.nuget\\packages\\coverlet.collector\\3.0.2\\coverlet.collector.3.0.2.nupkg.sha512",
     "C:\\Users\\aserb\\.nuget\\packages\\microsoft.codecoverage\\16.9.4\\microsoft.codecoverage.16.9.4.nupkg.sha512",

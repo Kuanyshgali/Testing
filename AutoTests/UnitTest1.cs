@@ -84,7 +84,6 @@ namespace AutomatedTests
             new WebDriverWait(driver, TimeSpan.FromSeconds(5)).Until(x => driver.FindElement(By.XPath("//a[@class = 'wCjUeog4KtWw64IplV1e6 _3539glT5gkZd9IN6zZJk6G sqgUf472Rzh6p9Y-lmoKX']")));
             driver.FindElement(By.XPath("//a[@class = 'wCjUeog4KtWw64IplV1e6 _3539glT5gkZd9IN6zZJk6G sqgUf472Rzh6p9Y-lmoKX']")).Click();
             driver.FindElement(By.XPath("//input[@name = 'Подтверждение пароля']")).SendKeys("AutoTest");
-            //driver.FindElement(By.XPath("//input[@name = 'Имя']")).SendKeys("AutoTest");
             driver.FindElement(By.XPath("//form[@class='_3dr8g_1eJXN-ElQNuG-g2a']//*[@name = 'Электронная почта']")).SendKeys("egorukr@mail.ru");
             driver.FindElement(By.XPath("//form[@class='_3dr8g_1eJXN-ElQNuG-g2a']//input[@type = 'password']")).SendKeys("AutoTest");
             Assert.IsTrue(!driver.FindElements(By.XPath("//button[@class = 'x-button x-button_accented x-button_40 x-button_intrinsic-width _27JVPsn4v4UPukX_BOxWUd'and not(@disabled)]")).Any(),
