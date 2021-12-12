@@ -4222,11 +4222,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\aserb\\Downloads\\AutoTests\\AutoTests\\AutoTests\\AutoTests.csproj",
+      "projectUniqueName": "C:\\Users\\aserb\\OneDrive\\Рабочий стол\\Учеба\\Тестирование\\AutoTests\\AutoTests\\AutoTests\\AutoTests.csproj",
       "projectName": "AutoTests",
-      "projectPath": "C:\\Users\\aserb\\Downloads\\AutoTests\\AutoTests\\AutoTests\\AutoTests.csproj",
+      "projectPath": "C:\\Users\\aserb\\OneDrive\\Рабочий стол\\Учеба\\Тестирование\\AutoTests\\AutoTests\\AutoTests\\AutoTests.csproj",
       "packagesPath": "C:\\Users\\aserb\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\aserb\\Downloads\\AutoTests\\AutoTests\\AutoTests\\obj\\",
+      "outputPath": "C:\\Users\\aserb\\OneDrive\\Рабочий стол\\Учеба\\Тестирование\\AutoTests\\AutoTests\\AutoTests\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
