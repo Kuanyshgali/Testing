@@ -59,7 +59,7 @@ namespace AutomatedTests
             if (driver.FindElements(By.CssSelector(".price__actual.parts__price_cd-disabled")).Any()) webPrices = driver.FindElements(By.CssSelector(".price__action.js-cd-discount"));
 
             int[] actualPrices = webPrices.Select(webPrice => Int32.Parse(Regex.Replace(webPrice.Text, @" ", ""))).ToArray();
-            actualPrices.ToList().ForEach(price => Assert.IsTrue(price >= 1000 && price <= 10000));
+            actualPrices.ToList().ForEach(price => Assert.IsTrue(price >= 1000 && price <= 10000, "Some element did not pass into the filter"));
         }
 
         [Test]
@@ -90,11 +90,10 @@ namespace AutomatedTests
             new WebDriverWait(driver, TimeSpan.FromSeconds(5)).Until(x => driver.FindElement(By.XPath("//a[contains(text(), 'Создать аккаунт')]")));
             driver.FindElement(By.XPath("//a[contains(text(), 'Создать аккаунт')]")).Click();
             driver.FindElement(By.XPath("//input[@name = 'Подтверждение пароля']")).SendKeys("AutoTest");
-            //driver.FindElement(By.XPath("//input[@name = 'Имя']")).SendKeys("AutoTest");
             driver.FindElement(By.XPath("//div[@name='subscribe']/..//*[@name = 'Электронная почта']")).SendKeys("egorukr@mail.ru");
             driver.FindElement(By.XPath("//div[@name='subscribe']/..//input[@type = 'password']")).SendKeys("AutoTest");
             Assert.IsTrue(!driver.FindElements(By.XPath("//a[contains(text(), 'Зарегестрироваться') and not(@disabled)]")).Any(),
-                "Error");
+                "The register button is available if the fields are empty");
         }
 
         [TearDown]
